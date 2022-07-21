@@ -1,0 +1,82 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "credits",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "total_credits",
+                    "type": "uint32"
+                },
+                {
+                    "name": "used_credits",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "notify",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "total_credits",
+                    "type": "uint32"
+                },
+                {
+                    "name": "used_credits",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "usecredit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "billed_org",
+                    "type": "name"
+                },
+                {
+                    "name": "used_credits",
+                    "type": "uint8"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "notify",
+            "type": "notify",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "usecredit",
+            "type": "usecredit",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "credits",
+            "type": "credits",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

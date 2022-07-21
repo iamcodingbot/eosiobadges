@@ -1,0 +1,167 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "starttime",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "cycle_length",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_cap",
+                    "type": "uint8"
+                },
+                {
+                    "name": "ipfsimage",
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "give",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint8"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "metadata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "starttime",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "cycle_length",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_known_cycle_start",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "last_known_cycle_end",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "max_cap",
+                    "type": "uint8"
+                },
+                {
+                    "name": "ipfsimage",
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "uint8"
+                },
+                {
+                    "name": "last_claimed_time",
+                    "type": "time_point"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "give",
+            "type": "give",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "metadata",
+            "type": "metadata",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stats",
+            "type": "stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

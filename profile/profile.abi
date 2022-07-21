@@ -1,0 +1,171 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "achievement",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "count",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "achievements",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "badge_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "count",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "authcontract",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "trusted_contract",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "authorized",
+            "base": "",
+            "fields": [
+                {
+                    "name": "trusted_contract",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "badgedata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "badge_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "contract",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "ipfs",
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "type": "string"
+                },
+                {
+                    "name": "rarity_counts",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "initbadge",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "ipfs",
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "achievement",
+            "type": "achievement",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "authcontract",
+            "type": "authcontract",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initbadge",
+            "type": "initbadge",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "achievements",
+            "type": "achievements",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "authorized",
+            "type": "authorized",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "badgedata",
+            "type": "badgedata",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

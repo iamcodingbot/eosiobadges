@@ -1,0 +1,179 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "creategotcha",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "starttime",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "cycle_length",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_cap",
+                    "type": "uint8"
+                },
+                {
+                    "name": "ipfsimage",
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "createsimple",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "parentbadge",
+                    "type": "name[]"
+                },
+                {
+                    "name": "ipfsimage",
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "givegotcha",
+            "base": "",
+            "fields": [
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint8"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "givesimple",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "badge",
+                    "type": "name"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "init",
+            "base": "",
+            "fields": [
+                {
+                    "name": "checks_contract",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "settings",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "checks_contract",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "creategotcha",
+            "type": "creategotcha",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createsimple",
+            "type": "createsimple",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "givegotcha",
+            "type": "givegotcha",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "givesimple",
+            "type": "givesimple",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "init",
+            "type": "init",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "settings",
+            "type": "settings",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
