@@ -2,9 +2,21 @@
 
 ##### this is open source eosio based standard to maintain badges for an eosio account. 
 ##### these badges can be viewed on account profile using this <>
+##### badges issued by all orgs can be viewed using this <>
 ##### these badges can be issued by organization and its members using this <>
 
 ### FAQs
+
+#### How to start?
+First deploy profile and orgbill contracts.
+Deploy chosen badges contract from simplebadge, gotchabadge and rollupbadge.
+Deploy modified org contract. see here for modifications needed.
+Execute action authcontract in profile contract ,using keys of org contract, to authorize contracts that can create badges for your organization.
+Top up credits here.
+Create/give a simple badge.
+Create/give a gotcha badge.
+Create/take a rollup badge.
+
 
 #### I have an community, what can i do with this?
 
