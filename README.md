@@ -8,19 +8,18 @@
 ##### ??
 
 
-## Org faqs -
 
-### I am an organization, what can i do with this?
+### FAQs
 
-### How can my organization use this?
+#### I am an organization, what can i do with this?
 
-### What are these 6 smart contracts for?
+#### How can my organization use this?
 
-## Dev faqs -
+#### What are these 6 smart contracts for?
 
-### Are you writiing a new badge contract?
+#### How to integrate new badge contract?
 
-## Badge Reciever faqs -  
+
 
 
 
