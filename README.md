@@ -1,9 +1,28 @@
 # eosiobadges
 
-design considerations - 
-minimum code write for orgs using badges.
-minimum need of redeploy of smart contracts.
-ram to be payed by org whose members issue the badges.
+##### design considerations - 
+##### minimum code write for orgs using badges.
+##### minimum need of redeploy of smart contracts.
+##### ram to be payed by org whose members issue the badges.
+##### easily pluggable new badge contracts.
+##### ??
+
+
+## Org faqs -
+
+### I am an organization, what can i do with this?
+
+### How can my organization use this?
+
+### What are these 6 smart contracts for?
+
+## Dev faqs -
+
+### Are you writiing a new badge contract?
+
+## Badge Reciever faqs -  
+
+
 
 ## CONTRACT - profile 
 
