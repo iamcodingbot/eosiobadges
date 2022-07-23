@@ -1,17 +1,12 @@
 # eosiobadges
 
-##### design considerations - 
-##### minimum code write for orgs using badges.
-##### minimum need of redeploy of smart contracts.
-##### ram to be payed by org whose members issue the badges.
-##### easily pluggable new badge contracts.
-##### ??
-
-
+##### this is open source eosio based standard to maintain badges for an eosio account. 
+##### these badges can be viewed on account profile using this <>
+##### these badges can be issued by organization and its members using this <>
 
 ### FAQs
 
-#### I am an organization, what can i do with this?
+#### I have an community, what can i do with this?
 
 #### How can my organization use this?
 
@@ -21,7 +16,14 @@
 
 
 
+##### design considerations - 
+##### minimum code write for orgs using badges.
+##### minimum need of redeploy of smart contracts.
+##### ram to be payed by org whose members issue the badges.
+##### easily pluggable new badge contracts.
+##### ??
 
+## TECH DETAILS
 
 ## CONTRACT - profile 
 
