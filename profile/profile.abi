@@ -88,6 +88,14 @@
                     "type": "name"
                 },
                 {
+                    "name": "write_to_aa",
+                    "type": "bool"
+                },
+                {
+                    "name": "aa_template_id",
+                    "type": "uint32"
+                },
+                {
                     "name": "ipfs",
                     "type": "string"
                 },
@@ -98,6 +106,16 @@
                 {
                     "name": "rarity_counts",
                     "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "del",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
                 }
             ]
         },
@@ -120,6 +138,10 @@
                 {
                     "name": "details",
                     "type": "string"
+                },
+                {
+                    "name": "write_to_aa",
+                    "type": "bool"
                 }
             ]
         }
@@ -133,6 +155,11 @@
         {
             "name": "authcontract",
             "type": "authcontract",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "del",
+            "type": "del",
             "ricardian_contract": ""
         },
         {

@@ -4,37 +4,21 @@
     "types": [],
     "structs": [
         {
-            "name": "create",
+            "name": "allow",
             "base": "",
             "fields": [
                 {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
                     "name": "org",
                     "type": "name"
-                },
-                {
-                    "name": "badge",
-                    "type": "name"
-                },
-                {
-                    "name": "parentbadge",
-                    "type": "name[]"
-                },
-                {
-                    "name": "ipfsimage",
-                    "type": "string"
-                },
-                {
-                    "name": "details",
-                    "type": "string"
-                },
-                {
-                    "name": "write_to_aa",
-                    "type": "bool"
                 }
             ]
         },
         {
-            "name": "give",
+            "name": "checkallow",
             "base": "",
             "fields": [
                 {
@@ -42,11 +26,31 @@
                     "type": "name"
                 },
                 {
-                    "name": "to",
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "prefs",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "unallow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
                     "type": "name"
                 },
                 {
-                    "name": "badge",
+                    "name": "org",
                     "type": "name"
                 },
                 {
@@ -54,46 +58,29 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "name": "metadata",
-            "base": "",
-            "fields": [
-                {
-                    "name": "badge",
-                    "type": "name"
-                },
-                {
-                    "name": "parentbadge",
-                    "type": "name[]"
-                },
-                {
-                    "name": "ipfsimage",
-                    "type": "string"
-                },
-                {
-                    "name": "details",
-                    "type": "string"
-                }
-            ]
         }
     ],
     "actions": [
         {
-            "name": "create",
-            "type": "create",
+            "name": "allow",
+            "type": "allow",
             "ricardian_contract": ""
         },
         {
-            "name": "give",
-            "type": "give",
+            "name": "checkallow",
+            "type": "checkallow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unallow",
+            "type": "unallow",
             "ricardian_contract": ""
         }
     ],
     "tables": [
         {
-            "name": "metadata",
-            "type": "metadata",
+            "name": "prefs",
+            "type": "prefs",
             "index_type": "i64",
             "key_names": [],
             "key_types": []

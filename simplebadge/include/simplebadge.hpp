@@ -7,7 +7,7 @@ CONTRACT simplebadge : public contract {
   public:
     using contract::contract;
 
-    ACTION create (name org, name badge, vector<name> parentbadge, string ipfsimage, string details);
+    ACTION create (name org, name badge, vector<name> parentbadge, string ipfsimage, string details, bool write_to_aa);
 
     ACTION give (name org, name to, name badge, string memo );
 
@@ -34,6 +34,7 @@ CONTRACT simplebadge : public contract {
       name badge;
       string ipfs;
       string details;
+      bool write_to_aa;
     }; 
 
 };

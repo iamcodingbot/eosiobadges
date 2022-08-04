@@ -4,6 +4,20 @@
     "types": [],
     "structs": [
         {
+            "name": "addsettings",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
             "name": "credits",
             "base": "",
             "fields": [
@@ -40,6 +54,20 @@
             ]
         },
         {
+            "name": "settings",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
             "name": "usecredit",
             "base": "",
             "fields": [
@@ -48,13 +76,18 @@
                     "type": "name"
                 },
                 {
-                    "name": "used_credits",
-                    "type": "uint8"
+                    "name": "bytes_consumed",
+                    "type": "uint64"
                 }
             ]
         }
     ],
     "actions": [
+        {
+            "name": "addsettings",
+            "type": "addsettings",
+            "ricardian_contract": ""
+        },
         {
             "name": "notify",
             "type": "notify",
@@ -70,6 +103,13 @@
         {
             "name": "credits",
             "type": "credits",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "settings",
+            "type": "settings",
             "index_type": "i64",
             "key_names": [],
             "key_types": []

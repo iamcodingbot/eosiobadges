@@ -1,5 +1,8 @@
 #include <org.hpp>
 
+// todo
+// 1) remove check for init missing in settings for checks contract.
+
   ACTION org::init (name checks_contract) {
     require_auth(get_self());
     settings_table _settings( get_self(), get_self().value );
@@ -98,7 +101,7 @@
   ACTION org::givesimple (name from, name to, name badge, string memo ) {
     require_auth(from);
 
-    require_recipient(checkscontract());
+    //require_recipient(checkscontract());
 
     action {
       permission_level{get_self(), name("active")},

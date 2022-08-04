@@ -1,6 +1,13 @@
 #include <simplebadge.hpp>
 
-  ACTION simplebadge::create (name org, name badge, vector<name> parentbadge, string ipfsimage, string details) {
+    // todo 
+    // 1) check for cycles
+    // 2) replace values in error messages.
+    // 3) put profiles contract name in a global constant
+    // 4) add action to update image json.
+    // 5) add action to update details json.
+
+  ACTION simplebadge::create (name org, name badge, vector<name> parentbadge, string ipfsimage, string details, bool write_to_aa) {
     require_auth(org);
 
     metadata_table _metadata (_self, org.value);
@@ -10,7 +17,6 @@
     for(auto i = 0; i < parentbadge.size(); i++) { 
       auto parentbadge_itr = _metadata.require_find(parentbadge[i].value, "<parent badge> not found");
     }
-    // todo - check for cycles
     _metadata.emplace(org, [&](auto& row) {
       row.badge = badge;
       row.parentbadge = parentbadge;
@@ -18,7 +24,7 @@
       row.details = details;
     });
 
-    action {
+/*    action {
       permission_level{get_self(), name("active")},
       name("profiles"),
       name("initbadge"),
@@ -26,8 +32,9 @@
         .org = org,
         .badge = badge,
         .ipfs = ipfsimage,
-        .details = details}
-    }.send();
+        .details = details,
+        .write_to_aa = write_to_aa}
+    }.send();*/
   }
 
 
@@ -37,7 +44,7 @@
     require_recipient(to);
 
     metadata_table _metadata (_self, org.value);
-    auto badge_itr = _metadata.require_find(badge.value, "invalid badge");
+    auto badge_itr = _metadata.require_find(badge.value, "no simplebadge named <badge> is created");
     vector<name> all_badges;
     queue<name> _helper_queue;
 
@@ -47,7 +54,7 @@
     }
 
     while(!_helper_queue.empty()) {
-      auto parent_itr = _metadata.require_find(_helper_queue.front().value, "invalid parent badge");
+      auto parent_itr = _metadata.require_find(_helper_queue.front().value, "no simplebadge named <parentbadge> is created");
       all_badges.push_back(_helper_queue.front()); 
       _helper_queue.pop();
       for(auto i = 0; i < parent_itr->parentbadge.size(); i++) {
