@@ -7,7 +7,7 @@ Badges are best defined in badge specific smart contracts. Badge contracts must 
 
 3 Badge contracts that are defined in this suite are -
 
-Simple Badge - Simple Badge smart contract allows any account to initializr and issue a simple badge. When a simple badge is issued, all its parent badges are also issued to an account.
+Simple Badge - Simple Badge smart contract allows any organization (any account) to initialize and issue a simple badge. When a simple badge is issued, all its parent badges are also issued to an account.
 
 Gotcha Badge - Gotcha badges are defined with a max issuance supply and duration cycle. At the end of the duration cycle, issuance capacity for an account is restored to max.
 
