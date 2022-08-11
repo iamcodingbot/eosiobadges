@@ -16,7 +16,7 @@ Rollup Badge -  Rollup badge is defined by setting up one or more [badge, count]
 Cumulative account balance of badges is maintained in Profile smart contract and granular per badge information can be maintained in Atomic Assets. 
 
 
-## Key considerations 
+## Key design considerations 
 Any organization should be able use the suite provided and issue badges to their members with minimal code implementation.
 
 Organizations can choose to store badges for its members either cumulatively or both cumulatively and granularly. Storing cumulative balance, where applicable, helps reduce costs.
