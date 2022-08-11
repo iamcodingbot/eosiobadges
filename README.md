@@ -1,5 +1,6 @@
 # eosiobadges
 
+## Intro
 This suite of smart contracts implements a badge distribution system. Badge is a non-transferable token. 
 
 Badges are best defined in badge specific smart contracts. Badge contracts must have interfaces defined for initializing a badge and issuing/claiming it. 
