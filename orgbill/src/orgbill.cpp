@@ -24,6 +24,10 @@ ACTION orgbill::addsettings (name key, uint32_t value) {
 }
 
 void orgbill::buycredits(name from, name to, asset quantity, string memo) {
+  if (to != get_self() || from == get_self()){
+    eosio::print("Ignoring token transfer of contract to itself and from itself.");
+    return;
+  }
   credits_table _credits(get_self(), get_self().value);
   auto itr = _credits.find(name(memo).value);
   uint32_t credits_bought = token_to_credits (quantity.amount);

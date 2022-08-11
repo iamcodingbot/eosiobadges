@@ -60,6 +60,10 @@
                 {
                     "name": "details",
                     "type": "string"
+                },
+                {
+                    "name": "write_to_aa",
+                    "type": "bool"
                 }
             ]
         },

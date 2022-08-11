@@ -3,6 +3,8 @@
 using namespace std;
 using namespace eosio;
 
+#define OPEN_PROFILE_CONTRACT "openprof.gm"
+
 CONTRACT userprefs : public contract {
   public:
     using contract::contract;

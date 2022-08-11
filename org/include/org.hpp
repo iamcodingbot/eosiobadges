@@ -1,6 +1,8 @@
 #include <eosio/eosio.hpp>
 #include <eosio/system.hpp>
 
+#define SIMPLEBADGE_CONTRACT "sbadge.gm"
+
 using namespace std;
 using namespace eosio;
 
@@ -14,7 +16,7 @@ CONTRACT org : public contract {
   
     ACTION init (name checks_contract);
 
-    ACTION createsimple (name creator, name badge, vector<name> parentbadge, string ipfsimage, string details);
+    ACTION createsimple (name creator, name badge, vector<name> parentbadge, string ipfsimage, string details, bool write_to_aa);
     ACTION creategotcha (name creator, name badge, time_point_sec starttime, uint64_t cycle_length, uint8_t max_cap, string ipfsimage, string details);
  //   ACTION createrollup (name creator, name badge, vector<badge_count> rollup_criteria, string ipfsimage, string details);
     ACTION givegotcha (name badge, name from, name to, uint8_t amount, string memo );
@@ -42,6 +44,7 @@ CONTRACT org : public contract {
       vector<name> parentbadge;
       string ipfsimage;
       string details;
+      bool write_to_aa;
     };
 
     struct creategotcha_args {

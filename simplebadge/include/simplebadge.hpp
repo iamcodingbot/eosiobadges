@@ -3,6 +3,8 @@
 using namespace std;
 using namespace eosio;
 
+#define OPEN_PROFILE_SMART_CONTRACT "openprof.gm"
+
 CONTRACT simplebadge : public contract {
   public:
     using contract::contract;

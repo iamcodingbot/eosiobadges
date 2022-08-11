@@ -37,6 +37,7 @@
 
     require_recipient(from);
     require_recipient(to);
+    // check from not equals to.
 
     metadata_table _metadata (_self, org.value);
     auto badge_itr = _metadata.require_find(badge.value, "Not a valid gotcha badge");

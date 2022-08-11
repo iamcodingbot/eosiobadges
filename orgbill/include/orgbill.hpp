@@ -6,7 +6,7 @@ using namespace eosio;
 
 # define BYTES_CONSUMED_PER_CREDIT "bytespercr"
 # define RAM_IN_BYTES_PER_SYS_TOKEN "ramrate"
-# define PROFILE_CONTRACT_NAME "profiles"
+# define PROFILE_CONTRACT_NAME "openprof.gm"
 
 CONTRACT orgbill : public contract {
   public:
@@ -41,14 +41,14 @@ CONTRACT orgbill : public contract {
     };
     typedef multi_index<name("settings"), settings> settings_table;
 
-    uint8_t bytes_to_credits (uint64_t bytes) {
+    uint32_t bytes_to_credits (uint64_t bytes) {
       settings_table _settings(get_self(), get_self().value);
       auto itr = _settings.find(name(BYTES_CONSUMED_PER_CREDIT).value);
       check(itr != _settings.end(), "Missing creditrate in bytes");
 
       uint32_t bytes_per_credit = itr->value;
-      uint8_t credits_needed = bytes/bytes_per_credit + (bytes%bytes_per_credit != 0);
-      return credits_needed;
+      uint32_t credits = bytes/bytes_per_credit + (bytes%bytes_per_credit != 0);
+      return credits;
     }
 
     uint32_t token_to_credits (uint64_t amount) {

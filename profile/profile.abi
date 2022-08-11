@@ -4,6 +4,20 @@
     "types": [],
     "structs": [
         {
+            "name": "aacollection",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "collection",
+                    "type": "name"
+                }
+            ]
+        },
+        {
             "name": "achievement",
             "base": "",
             "fields": [
@@ -110,16 +124,6 @@
             ]
         },
         {
-            "name": "del",
-            "base": "",
-            "fields": [
-                {
-                    "name": "org",
-                    "type": "name"
-                }
-            ]
-        },
-        {
             "name": "initbadge",
             "base": "",
             "fields": [
@@ -144,6 +148,20 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "name": "initcoll",
+            "base": "",
+            "fields": [
+                {
+                    "name": "org",
+                    "type": "name"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                }
+            ]
         }
     ],
     "actions": [
@@ -158,17 +176,24 @@
             "ricardian_contract": ""
         },
         {
-            "name": "del",
-            "type": "del",
+            "name": "initbadge",
+            "type": "initbadge",
             "ricardian_contract": ""
         },
         {
-            "name": "initbadge",
-            "type": "initbadge",
+            "name": "initcoll",
+            "type": "initcoll",
             "ricardian_contract": ""
         }
     ],
     "tables": [
+        {
+            "name": "aacollection",
+            "type": "aacollection",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
         {
             "name": "achievements",
             "type": "achievements",

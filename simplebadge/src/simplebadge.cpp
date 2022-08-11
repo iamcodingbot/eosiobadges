@@ -1,7 +1,7 @@
 #include <simplebadge.hpp>
 
     // todo 
-    // 1) check for cycles
+    // 1) check for cycles to throw better error message, c.
     // 2) replace values in error messages.
     // 3) put profiles contract name in a global constant
     // 4) add action to update image json.
@@ -9,7 +9,7 @@
 
   ACTION simplebadge::create (name org, name badge, vector<name> parentbadge, string ipfsimage, string details, bool write_to_aa) {
     require_auth(org);
-
+    
     metadata_table _metadata (_self, org.value);
     auto badge_itr = _metadata.find(badge.value);
 
@@ -23,10 +23,9 @@
       row.ipfsimage = ipfsimage;
       row.details = details;
     });
-
-/*    action {
+    action {
       permission_level{get_self(), name("active")},
-      name("profiles"),
+      name(OPEN_PROFILE_SMART_CONTRACT),
       name("initbadge"),
       initbadge_args {
         .org = org,
@@ -34,13 +33,12 @@
         .ipfs = ipfsimage,
         .details = details,
         .write_to_aa = write_to_aa}
-    }.send();*/
+    }.send();
   }
 
 
   ACTION simplebadge::give (name org, name to, name badge, string memo ) {
     require_auth(org);
-
     require_recipient(to);
 
     metadata_table _metadata (_self, org.value);
@@ -65,7 +63,7 @@
     for (auto i = 0 ; i < all_badges.size() ; i++ ) {
       action {
         permission_level{get_self(), name("active")},
-        name("profiles"),
+        name(OPEN_PROFILE_SMART_CONTRACT),
         name("achievement"),
         achievement_args {
           .org = org,

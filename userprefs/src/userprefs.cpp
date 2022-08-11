@@ -21,7 +21,7 @@ ACTION userprefs::unallow(name account, name org, string memo) {
 }
 
 ACTION userprefs::checkallow(name org, name account) {
-  require_auth(name("profiles"));
+  require_auth(name(OPEN_PROFILE_CONTRACT));
   prefs_table _prefs (_self, account.value);
   auto prefs_itr = _prefs.find(org.value);
   check (prefs_itr != _prefs.end(), "<account> has not allowed <org> to issue badges");

@@ -20,21 +20,22 @@
 
   }
 
-  ACTION org::createsimple (name creator, name badge, vector<name> parentbadge, string ipfsimage, string details) {
+  ACTION org::createsimple (name creator, name badge, vector<name> parentbadge, string ipfsimage, string details, bool write_to_aa) {
     require_auth(creator);
 
-    //require_recipient(checkscontract());
-
+    require_recipient(checkscontract());
+    
     action {
       permission_level{get_self(), name("active")},
-      name("simplebadge"),
+      name(SIMPLEBADGE_CONTRACT),
       name("create"),
       createsimple_args {
         .org = get_self(),
         .badge = badge,
         .parentbadge = parentbadge,
         .ipfsimage = ipfsimage,
-        .details = details }
+        .details = details,
+        .write_to_aa = write_to_aa }
     }.send();
   }
 
@@ -101,11 +102,11 @@
   ACTION org::givesimple (name from, name to, name badge, string memo ) {
     require_auth(from);
 
-    //require_recipient(checkscontract());
+    require_recipient(checkscontract());
 
     action {
       permission_level{get_self(), name("active")},
-      name("simplebadge"),
+      name(SIMPLEBADGE_CONTRACT),
       name("give"),
       givesimple_args {
         .org = get_self(),
