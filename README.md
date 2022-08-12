@@ -1,14 +1,14 @@
 # eosiobadges
 
 ## Intro
-This suite of smart contracts is a framework for an organization to distribute Badges to its members. A Badge is a non-transferable token whose supply can vary from 1 to very high. 
+This suite of smart contracts is a framework for organizations to distribute Badges to its members. A Badge is a non-transferable token whose supply can vary from 1 to very high. 
 
-Badges are defined in Badge contracts. These badge contracts must have interfaces defined for initializing a badge and issuing/claiming it. Each one of them can be seen as a factory to create and issue badges.
+Badges are defined in badge contracts. Badge contract can be seen as a factory to create and issue Badges.
 
 Following 3 badge contracts are available out-of-the-box -
 
 ### Simple Badge 
-Simple Badge smart contract allows an organization to initialize and issue a simple badge. When a simple badge is issued, all its parent badges are also issued to an account.
+Simple Badge smart contract allows an organization to initialize and issue a simple badge. When a simple badge is issued to an account, all its parent badges are also issued to that account.
 
 ### Gotcha Badge 
 Gotcha badges are defined with a max issuance supply and duration cycle. At the end of the duration cycle, issuance capacity for an account is restored to max.
