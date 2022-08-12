@@ -23,4 +23,4 @@ Organizations can choose to store badges for its members either cumulatively or 
 
 New badge contracts can be plugged into the existing system as long as they meet the interface condition. Open source badge contracts can be used by all organizations and closed source can be used by an organization for itself.
 
-Many common badge contracts are made available for all organizations. Need for code vetting is reduced.
+Many common badge contracts are available for all organizations. Need for code vetting is reduced.
