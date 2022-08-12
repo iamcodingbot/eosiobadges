@@ -47,6 +47,6 @@ For an account to receive a badge, it must whitelist issuing organization in use
 - Minimum code write for an organization to onboard. 
 
 - Optimal storage. 
-Organizations can choose to store badges for its members either cumulatively or both cumulatively and granularly. Storing cumulative balance, where applicable, reduces storage costs.
+Organizations can choose to store badges for its members either cumulatively or both cumulatively and granularly.
 
 - Permissionless integration of new badge contracts and organizations.
