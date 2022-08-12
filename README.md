@@ -8,10 +8,10 @@ Badges are defined in badge contracts. Badge contract can be seen as a factory t
 Following 3 badge contracts are available out-of-the-box -
 
 ### Simple Badge 
-Simple Badge smart contract allows an organization to initialize and issue a simple badge. When a simple badge is issued to an account, all its parent badges are also issued to that account.
+Simple Badge smart contract allows an organization to initialize and to issue simple badges. When a simple badge is issued to an account, all its parent badges are also issued to that account.
 
 ### Gotcha Badge 
-Gotcha badges are defined with a max issuance supply and duration cycle. At the end of the duration cycle, issuance capacity for an account is restored to max.
+Gotcha badges are defined with a max issuance supply and a duration cycle. At the end of the duration cycle, issuance capacity for an account is restored to max.
 
 ### Rollup Badge 
 Rollup badge is defined by setting up one or more [badge, count] combinations. An account can claim a rollup badge, if it holds badges for all defined combinations.
