@@ -28,14 +28,14 @@ Many common badge contracts are available for all organizations. Need for code v
 
 
 
-## Organization onboarding steps -
+## Organization onboarding steps
 
 - Deploy Org contract.
 - Create a checks contract to validate members and inputs.
 - Call Init action on orgs contract to setup a checks contract in step 2.
-- Buy Credits via sending tokens to Billing contract.
-- Choose set of Badge Contracts to use for org.
+- Buy Credits via sending tokens to orgbill contract.
+- Choose set of Badge Contracts in profile contract.
 
-## Receiver onboarding step -
+## Receiver onboarding step
 
 Badge receiver needs to whitelist an org in userprefs contract
