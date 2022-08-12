@@ -35,7 +35,7 @@ Setup members list and roles :
 - Create a checks contract to validate members and inputs.
 - Call Init action on orgs contract to link checks contract from above.
 
-Pay for service:
+Pay smart contract for service:
 - Buy Credits via sending tokens to orgbill contract.
 
 Selecting types of badges:
