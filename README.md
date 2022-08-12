@@ -3,7 +3,7 @@
 ## Intro
 This suite of smart contracts is a framework to distribute Badges. A Badge is a non-transferable token whose supply can vary from 1 to very high. 
 
-In the framework, Badges are best defined in badge specific smart contracts. Badge contracts must have interfaces defined for initializing a badge and issuing/claiming it. 
+Badges are defined in Badge contracts. These badge contracts must have interfaces defined for initializing a badge and issuing/claiming it. They can be seen as a factory to create and issue badges.
 
 Following badge contracts are available out-of-the-box -
 
@@ -28,10 +28,17 @@ Organizations can choose to store badges for its members either cumulatively or 
 
 ## Organization onboarding steps
 
+Organization onboarding is broadly 3 steps - 
+ 
+Setup members list and roles :
 - Deploy Org contract.
 - Create a checks contract to validate members and inputs.
 - Call Init action on orgs contract to setup a checks contract in step 2.
+
+Pay for service:
 - Buy Credits via sending tokens to orgbill contract.
+
+Selecting types of badges:
 - Choose set of trusted badge contracts in profile contract.
 
 ## Receiver onboarding step
