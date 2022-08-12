@@ -3,7 +3,7 @@
 ## Intro
 This suite of smart contracts is a framework to distribute Badges. A Badge is a non-transferable token whose supply can vary from 1 to very high. 
 
-Badges are defined in Badge contracts. These badge contracts must have interfaces defined for initializing a badge and issuing/claiming it. They can be seen as a factory to create and issue badges.
+Badges are defined in Badge contracts. These badge contracts must have interfaces defined for initializing a badge and issuing/claiming it. Each one of them can be seen as a factory to create and issue badges.
 
 Following badge contracts are available out-of-the-box -
 
