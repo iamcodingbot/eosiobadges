@@ -24,3 +24,18 @@ Organizations can choose to store badges for its members either cumulatively or 
 New badge contracts can be plugged into the existing system as long as they meet the interface condition. Open source badge contracts can be used by all organizations and closed source can be used by an organization for itself.
 
 Many common badge contracts are available for all organizations. Need for code vetting is reduced.
+
+
+
+
+## Organization onboarding steps -
+
+- Deploy Org contract.
+- Create a checks contract to validate members and inputs.
+- Call Init action on orgs contract to setup a checks contract in step 2.
+- Buy Credits via sending tokens to Billing contract.
+- Choose set of Badge Contracts to use for org.
+
+## Receiver onboarding step -
+
+Badge receiver needs to whitelist an org in userprefs contract
