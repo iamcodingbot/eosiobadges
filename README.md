@@ -1,7 +1,7 @@
 # eosiobadges
 
 ## Intro
-This suite of smart contracts is a framework for organizations to distribute Badges to its members. A Badge is a non-transferable token whose supply can vary from 1 to very high. 
+This suite of smart contracts implements a framework for organizations to distribute Badges to its members. A Badge is a non-transferable token whose supply can vary from 1 to very high. 
 
 Badges are defined in badge contracts. Badge contract can be seen as a factory to create and issue Badges.
 
