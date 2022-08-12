@@ -33,7 +33,7 @@ Organization onboarding is broadly 3 steps -
 Setup members list and roles :
 - Deploy Org contract.
 - Create a checks contract to validate members and inputs.
-- Call Init action on orgs contract to setup a checks contract in step 2.
+- Call Init action on orgs contract to link checks contract from above.
 
 Pay for service:
 - Buy Credits via sending tokens to orgbill contract.
@@ -43,4 +43,4 @@ Selecting types of badges:
 
 ## Receiver onboarding step
 
-Badge receiver needs to whitelist an org in userprefs contract
+For an account to receive a badge, it must whitelist issuing organization in userprefs contract
