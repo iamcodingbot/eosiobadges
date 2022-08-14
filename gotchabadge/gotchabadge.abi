@@ -34,6 +34,10 @@
                 {
                     "name": "details",
                     "type": "string"
+                },
+                {
+                    "name": "write_to_aa",
+                    "type": "bool"
                 }
             ]
         },
@@ -92,7 +96,7 @@
                     "type": "time_point_sec"
                 },
                 {
-                    "name": "max_cap",
+                    "name": "supply_per_cycle",
                     "type": "uint8"
                 },
                 {
@@ -102,6 +106,10 @@
                 {
                     "name": "details",
                     "type": "string"
+                },
+                {
+                    "name": "write_to_aa",
+                    "type": "bool"
                 }
             ]
         },

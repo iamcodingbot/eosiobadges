@@ -4,11 +4,13 @@
 using namespace std;
 using namespace eosio;
 
+#define PROFILES_CONTRACT "openprof.gm"
+
 CONTRACT gotchabadge : public contract {
   public:
     using contract::contract;
 
-    ACTION create (name org, name badge, time_point_sec starttime, uint64_t cycle_length, uint8_t max_cap, string ipfsimage, string details);
+    ACTION create (name org, name badge, time_point_sec starttime, uint64_t cycle_length, uint8_t max_cap, string ipfsimage, string details, bool write_to_aa);
 
     ACTION give (name org, name badge, name from, name to, uint8_t amount, string memo );
   
@@ -21,9 +23,11 @@ CONTRACT gotchabadge : public contract {
       uint64_t cycle_length; // 24 hrs
       time_point_sec last_known_cycle_start;
       time_point_sec last_known_cycle_end;
-      uint8_t max_cap;
+      uint8_t supply_per_cycle;
       string ipfsimage;
+      string display_name;
       string details;
+      bool write_to_aa;
       auto primary_key() const {return badge.value; }
     };
     typedef multi_index<name("metadata"), metadata> metadata_table;
@@ -56,6 +60,7 @@ CONTRACT gotchabadge : public contract {
       name badge;
       string ipfs;
       string details;
+      bool write_to_aa;
     };
 
 };
