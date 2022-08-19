@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-19T08:52:07.456Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="UtbcK5S9cLD3AgQ22F1o" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-19T08:55:00.598Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="t5rgWALq0246b-NUR93K" version="20.2.5" type="github">
   <diagram id="XNoYjwBNV3gTCZsVwU3y" name="Page-1">
-    <mxGraphModel dx="1710" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2162" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -79,7 +79,7 @@
         <mxCell id="KFCudj_lykEUu4Wdejpt-76" value="metadata" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
           <mxGeometry x="64.99999999999999" y="75.97236863493627" width="119.99999999999999" height="36.12440366972477" as="geometry" />
         </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-84" value="Stores badge metadata,&lt;br&gt;&amp;nbsp;recognized badge contracts&lt;br&gt;&amp;nbsp;and consumer contracts to notify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
+        <mxCell id="KFCudj_lykEUu4Wdejpt-84" value="Stores badge metadata;&lt;br&gt;&amp;nbsp;recognized badge contracts;&lt;br&gt;&amp;nbsp;and consumer contracts to notify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
           <mxGeometry x="25" y="128.82907886706485" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-88" value="calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
