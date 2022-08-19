@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-19T08:56:23.053Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="w8OprRR8OTaB7oVYw_Ap" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-19T08:58:12.721Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="x-m-i4RWogVb82MQZKvO" version="20.2.5" type="github">
   <diagram id="XNoYjwBNV3gTCZsVwU3y" name="Page-1">
     <mxGraphModel dx="1710" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -147,8 +147,8 @@
         <mxCell id="IqAsUECDOmeUmZ750BKp-17" value="calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="290" y="550" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IqAsUECDOmeUmZ750BKp-20" value="&lt;b&gt;EOSIOBADGES v2.0&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-150" y="18.75" width="140" height="30" as="geometry" />
+        <mxCell id="IqAsUECDOmeUmZ750BKp-20" value="&lt;b&gt;ANTELOPE BADGES v2.0&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="18.75" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
