@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-08-19T08:45:52.386Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="h_9lGbvxaSKA1QnB1odu" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-19T08:52:07.456Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="UtbcK5S9cLD3AgQ22F1o" version="20.2.5" type="github">
   <diagram id="XNoYjwBNV3gTCZsVwU3y" name="Page-1">
     <mxGraphModel dx="1710" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="IqAsUECDOmeUmZ750BKp-1" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;arcSize=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="170" y="10" width="240" height="150" as="geometry" />
+          <mxGeometry x="160" y="10" width="240" height="150" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;endArrow=openThin;endFill=0;" parent="1" source="KFCudj_lykEUu4Wdejpt-62" target="KFCudj_lykEUu4Wdejpt-74" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -14,7 +14,7 @@
           <mxGeometry x="-150" y="60" width="310" height="100" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-79" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="-110" y="130" width="195.65420560747663" height="320" as="geometry" />
+          <mxGeometry x="-110" y="190" width="195.65420560747663" height="320" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-62" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="KFCudj_lykEUu4Wdejpt-79" vertex="1">
           <mxGeometry width="190" height="320" as="geometry" />
@@ -38,98 +38,82 @@
           <mxGeometry x="15.654205607476634" y="245.0632911392405" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-80" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="490" y="10" width="230" height="475" as="geometry" />
+          <mxGeometry x="470" y="10" width="230" height="504.06" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-67" value="" style="rounded=1;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;arcSize=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry width="209.99999999999997" height="475" as="geometry" />
+          <mxGeometry width="209.99999999999997" height="504.06" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-10" value="aabadge" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="54.599999999999994" y="62.735849056603776" width="96.45" height="48.03773584905661" as="geometry" />
+          <mxGeometry x="54.599999999999994" y="66.57396226415094" width="96.45" height="50.97663396226415" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-11" value="Cumulative" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="54.6" y="179.24528301886792" width="95.4" height="44.81132075471698" as="geometry" />
+          <mxGeometry x="54.6" y="190.21132075471698" width="95.4" height="47.552830188679245" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-19" value="stores badge-id, template-id mapping&lt;br&gt;&amp;nbsp;and write granular data to aa" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="-5.000000000000001" y="125.47190653795525" width="220" height="40" as="geometry" />
+          <mxGeometry x="-5.000000000000001" y="133.14814570425625" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-15" value="Stores cumulative badge&lt;br&gt;&amp;nbsp;counts per account per org" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="19.999999999999996" y="241.9846752961826" width="170" height="40" as="geometry" />
+          <mxGeometry x="19.999999999999996" y="256.7890430100922" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-68" value="CONSUMER CONTRACTS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="25.199999999999996" y="22.093023255813954" width="170" height="30" as="geometry" />
+          <mxGeometry x="25.199999999999996" y="23.444651162790695" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-69" value="&lt;span style=&quot;&quot;&gt;Consumer contracts &lt;br&gt;receives notification&lt;br&gt;&amp;nbsp;whenever initbadge and achievement &lt;br&gt;are called.&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="-8.881784197001252e-16" y="394.33545414655555" width="230" height="70" as="geometry" />
+          <mxGeometry x="-8.881784197001252e-16" y="418.4604821412901" width="230" height="70" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-82" value="..." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="KFCudj_lykEUu4Wdejpt-80" vertex="1">
-          <mxGeometry x="54.6" y="295.7547169811321" width="95.4" height="44.81132075471698" as="geometry" />
+          <mxGeometry x="54.6" y="313.84867924528305" width="95.4" height="47.552830188679245" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-87" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="170" y="187.5" width="245" height="336.25" as="geometry" />
+          <mxGeometry x="160" y="185.93" width="240" height="328.13" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-74" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;arcSize=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
-          <mxGeometry width="244.99999999999997" height="336.25" as="geometry" />
+          <mxGeometry width="239.99999999999997" height="328.13" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-22" value="account preferences" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
-          <mxGeometry x="66.35416666666666" y="204.23089187857892" width="122.49999999999999" height="37.018348623853214" as="geometry" />
+          <mxGeometry x="64.99999999999999" y="199.29898156763747" width="119.99999999999999" height="36.12440366972477" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-25" value="stores account preference and&lt;br&gt;&amp;nbsp;checks if account has allowed an org&amp;nbsp;&lt;br&gt;to issue badges" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
-          <mxGeometry x="5.104166666666666" y="267.4224552059602" width="230" height="60" as="geometry" />
+          <mxGeometry x="4.999999999999999" y="260.9645508601687" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-76" value="metadata" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
-          <mxGeometry x="66.35416666666666" y="77.85240286928145" width="122.49999999999999" height="37.018348623853214" as="geometry" />
+          <mxGeometry x="64.99999999999999" y="75.97236863493627" width="119.99999999999999" height="36.12440366972477" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-84" value="Stores badge metadata,&lt;br&gt;&amp;nbsp;recognized badge contracts&lt;br&gt;&amp;nbsp;and consumer contracts to notify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-87" vertex="1">
-          <mxGeometry x="25.520833333333332" y="132.01712055907888" width="200" height="60" as="geometry" />
+          <mxGeometry x="25" y="128.82907886706485" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-88" value="inline action" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="85.65" y="260" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=openThin;endFill=0;strokeWidth=1;" parent="1" source="KFCudj_lykEUu4Wdejpt-74" target="KFCudj_lykEUu4Wdejpt-67" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-90" value="notifies" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="450" y="255" width="60" height="30" as="geometry" />
+        <mxCell id="KFCudj_lykEUu4Wdejpt-88" value="calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="100" y="320" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-94" value="" style="group;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="-110" y="590" width="870" height="170" as="geometry" />
+          <mxGeometry x="-110" y="590" width="790" height="170" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-92" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
-          <mxGeometry width="870" height="170" as="geometry" />
+          <mxGeometry width="790" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-50" value="Org contract" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
-          <mxGeometry x="190" y="36.42857142857142" width="120" height="48.57142857142856" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-51" value="Org roles." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
-          <mxGeometry x="190" y="113.33333333333333" width="120" height="48.57142857142856" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-52" value="Contract for orgs to deploy. It encapsulates all touchpoints for an org in the system like-&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1) subscribe for features like store granular, store cumulative&lt;br&gt;2) create new badges.&lt;br&gt;3) issue badges&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
-          <mxGeometry x="345" y="32.38095238095238" width="490" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-53" value="Validates inputs like member roles" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
-          <mxGeometry x="345" y="125.47619047619048" width="210" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-93" value="ORG INTERFACE CONTRACTS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
-          <mxGeometry y="12.14285714285714" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="KFCudj_lykEUu4Wdejpt-94" source="KFCudj_lykEUu4Wdejpt-50" target="KFCudj_lykEUu4Wdejpt-51" edge="1">
+        <mxCell id="IqAsUECDOmeUmZ750BKp-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="KFCudj_lykEUu4Wdejpt-94" source="KFCudj_lykEUu4Wdejpt-50" target="KFCudj_lykEUu4Wdejpt-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" parent="1" source="KFCudj_lykEUu4Wdejpt-92" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="530" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="KFCudj_lykEUu4Wdejpt-50" value="Org contract" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
+          <mxGeometry x="172.5287356321839" y="36.42857142857142" width="108.96551724137932" height="48.57142857142856" as="geometry" />
         </mxCell>
-        <mxCell id="KFCudj_lykEUu4Wdejpt-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" parent="1" source="KFCudj_lykEUu4Wdejpt-92" target="KFCudj_lykEUu4Wdejpt-62" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="325" y="580" />
-              <mxPoint x="-15" y="580" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="KFCudj_lykEUu4Wdejpt-51" value="Org roles." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
+          <mxGeometry x="172.5287356321839" y="113.33333333333333" width="108.96551724137932" height="48.57142857142856" as="geometry" />
+        </mxCell>
+        <mxCell id="KFCudj_lykEUu4Wdejpt-52" value="Contract for orgs to deploy. It encapsulates all touchpoints for an org in the system like-&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1) subscribe for features like store granular, store cumulative&lt;br&gt;2) create new badges.&lt;br&gt;3) issue badges&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
+          <mxGeometry x="313.2758620689655" y="32.38095238095238" width="490" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KFCudj_lykEUu4Wdejpt-53" value="Validates inputs like member roles" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
+          <mxGeometry x="313.2758620689655" y="125.47619047619048" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KFCudj_lykEUu4Wdejpt-93" value="ORG INTERFACE CONTRACTS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="KFCudj_lykEUu4Wdejpt-94" vertex="1">
+          <mxGeometry y="6.432857142857141" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-18" value="notifies" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="KFCudj_lykEUu4Wdejpt-94">
+          <mxGeometry x="160" y="83.33" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-34" value="maintain org credits. &lt;br&gt;its actions are called when ram&lt;br&gt;is consumed and when badge is issued." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="170" y="100" width="240" height="60" as="geometry" />
+          <mxGeometry x="150" y="100" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KFCudj_lykEUu4Wdejpt-23" value="billing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
           <mxGeometry x="230" y="48.75" width="120" height="50" as="geometry" />
@@ -137,8 +121,31 @@
         <mxCell id="IqAsUECDOmeUmZ750BKp-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="1" source="KFCudj_lykEUu4Wdejpt-74" target="IqAsUECDOmeUmZ750BKp-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IqAsUECDOmeUmZ750BKp-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="1" source="KFCudj_lykEUu4Wdejpt-67" target="IqAsUECDOmeUmZ750BKp-1">
+        <mxCell id="IqAsUECDOmeUmZ750BKp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.675;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="1" source="KFCudj_lykEUu4Wdejpt-74" target="KFCudj_lykEUu4Wdejpt-67">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1.008;entryY=0.84;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="1" source="KFCudj_lykEUu4Wdejpt-67" target="IqAsUECDOmeUmZ750BKp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="1" source="KFCudj_lykEUu4Wdejpt-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=openThin;endFill=0;strokeWidth=1;" edge="1" parent="1" source="KFCudj_lykEUu4Wdejpt-92" target="KFCudj_lykEUu4Wdejpt-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-14" value="notifies" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="315" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-15" value="calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-16" value="calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="155.93" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IqAsUECDOmeUmZ750BKp-17" value="calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="550" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
