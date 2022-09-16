@@ -46,7 +46,7 @@ ACTION profile::initcoll (name org, name collection_name) {
   }.send();
 
   vector <FORMAT> schema_format;
-  schema_format.push_back( FORMAT{.name = "name", .type = "string"});
+  schema_format.push_back(FORMAT{.name = "name", .type = "string"});
   schema_format.push_back(FORMAT{.name = "contract",.type = "string"});
   schema_format.push_back(FORMAT{.name = "badge",.type = "string"});
   schema_format.push_back(FORMAT{.name = "img",.type = "string"});
@@ -104,30 +104,3 @@ ACTION profile::initbadge (name org, name badge, string ipfs, string details, bo
 }
 
 
-void profile::updatebadge(
-    int32_t template_id,
-    name authorized_creator,
-    name collection_name,
-    name schema_name,
-    bool transferable,
-    bool burnable,
-    uint32_t max_supply,
-    ATTRIBUTE_MAP immutable_data) {
-
-  aacollection_table _aacollection ( _self, _self.value);
-  auto collection_index = _aacollection.get_index<name("colkey")>();
-  auto collection_iterator = collection_index.require_find (collection_name.value, "somethings wrong, collection not found");
-  name org = collection_iterator->org;
-  name badge = name(get<string>(immutable_data["badge"]));
-  name contract= name(get<string>(immutable_data["contract"]));
-
-  badgedata_table _badgedata( _self, org.value );
-  auto contract_badge_index = _badgedata.get_index<name("contractbadge")>();
-  uint128_t contract_badge_key = ((uint128_t) contract.value) << 64 | badge.value;
-  auto contract_badge_iterator = contract_badge_index.find (contract_badge_key);
-
-  check (contract_badge_iterator != contract_badge_index.end(), "somethings wrong, not found");
-  contract_badge_index.modify(contract_badge_iterator, get_self(), [&](auto& row){
-    row.aa_template_id = template_id;
-  });
-}

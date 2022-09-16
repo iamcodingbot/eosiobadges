@@ -1,6 +1,7 @@
 #include <eosio/eosio.hpp>
 #include <eosio/system.hpp>
 
+#define CHECKS_CONTRACT ""
 #define SIMPLEBADGE_CONTRACT "sbadge.gm"
 
 using namespace std;
@@ -13,9 +14,11 @@ CONTRACT org : public contract {
       name badge;
       uint16_t count;
     };
-  
-    ACTION init (name checks_contract);
 
+    ACTION recognize (name org_admin, name trusted_badge_contract);
+    ACTION initcoll (name org_admin, name collection_name);
+    
+  
     ACTION createsimple (name creator, name badge, vector<name> parentbadge, string ipfsimage, string details, bool write_to_aa);
     ACTION creategotcha (name creator, name badge, time_point_sec starttime, uint64_t cycle_length, uint8_t max_cap, string ipfsimage, string details);
  //   ACTION createrollup (name creator, name badge, vector<badge_count> rollup_criteria, string ipfsimage, string details);
@@ -25,18 +28,6 @@ CONTRACT org : public contract {
 
   private:
 
-    TABLE settings {
-      uint64_t id;
-      name checks_contract;
-      auto primary_key() const { return id; }
-    };
-    typedef multi_index<name("settings"), settings> settings_table;
-
-    name checkscontract() {
-      settings_table _settings( get_self(), get_self().value );
-      auto itr = _settings.require_find(1, "init missing");
-      return itr->checks_contract;
-    }
 
     struct createsimple_args {
       name org;

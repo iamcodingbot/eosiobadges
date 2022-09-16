@@ -20,10 +20,7 @@ CONTRACT profile : public contract {
   public:
     using contract::contract;
 
-  struct authorization_details {
-    bool is_authorized;
-    name authorized_account;
-  };
+
 
   struct badgedata_details {
     uint64_t badge_id;
@@ -87,15 +84,6 @@ CONTRACT profile : public contract {
 
   ACTION achievement (name org, name badge, name account, uint8_t count);
 
-  [[eosio::on_notify(ATOMIC_ASSETS_CREATE_TEMPLATE_NOTIFICATION)]] void updatebadge(
-    int32_t template_id,
-    name authorized_creator,
-    name collection_name,
-    name schema_name,
-    bool transferable,
-    bool burnable,
-    uint32_t max_supply,
-    ATTRIBUTE_MAP immutable_data); 
 
   private:
 
@@ -143,15 +131,7 @@ CONTRACT profile : public contract {
     indexed_by<name("accountbadge"), const_mem_fun<achievements, uint128_t, &achievements::acc_badge_key>>
     > achievements_table;
 
-    TABLE aacollection {
-      name org;
-      name collection;
-      auto primary_key() const {return org.value;}
-      uint64_t collection_key() const {return collection.value;}
-    };
-    typedef multi_index<name("aacollection"), aacollection,
-    indexed_by<name("colkey"), const_mem_fun<aacollection, uint64_t, &aacollection::collection_key>>
-    > aacollection_table;
+
 
 
     badgedata_details get_update_badgedata_state (name org, name badge, name contract, uint8_t count) {
@@ -189,16 +169,7 @@ CONTRACT profile : public contract {
       };
     }
 
-    void check_account_prefs (name org, name account) {
-      action {
-        permission_level{get_self(), name("active")},
-        name(ACCOUNT_PREFERENCES_CONTRACT),
-        name("checkallow"),
-        checkallow_args {
-          .org = org,
-          .account = account }
-      }.send();
-    }
+ 
     
     void deduct_credit (name org, uint64_t bytes_used) {
       action {
@@ -235,38 +206,6 @@ CONTRACT profile : public contract {
       return bytes_used;
     }
 
-    uint8_t write_aa_achievement(name org, name account, bool write_to_aa, uint32_t template_id, uint8_t count) {
-      uint64_t bytes_used = 0;
-      if(write_to_aa) {
-
-        aacollection_table _aacollection (_self, _self.value);
-        auto itr = _aacollection.find(org.value); 
-        check (itr != _aacollection.end(), "Initialize a collection for your org initcoll action. Params needed org name and choice of collection name ");
-        name collection = itr->collection;
-
-        std::map <std::string, ATOMIC_ATTRIBUTE> immutable_data;
-        std::map <std::string, ATOMIC_ATTRIBUTE> mutable_data;
-        vector<asset> tokens_to_back;
-        for (auto i = 0; i < count; i++) {
-          action {
-            permission_level{get_self(), name("active")},
-            name(ATOMIC_ASSETS_CONTRACT),
-            name("mintasset"),
-            mintaa_args {
-              .authorized_creator = get_self(),
-              .collection_name = collection,
-              .schema_name = name(ATOMIC_ASSETS_SCHEMA_NAME),
-              .template_id = template_id,
-              .new_asset_owner = account,
-              .immutable_data = immutable_data,
-              .mutable_data = mutable_data,
-              .tokens_to_back = tokens_to_back}
-          }.send();
-        }
-        bytes_used = count * (128 + 4 * 8);
-      } 
-      return bytes_used;
-    }
 
     uint64_t write_native_badgedata(name org, name authorized_account, name badge, string ipfs, string details, bool write_to_aa) {
       uint64_t bytes_used = 0;
@@ -290,38 +229,7 @@ CONTRACT profile : public contract {
       return bytes_used;
     }
 
-    uint64_t write_aa_template(name org, name authorized_account, name badge, string ipfs, string details, bool write_to_aa) {
-      uint64_t bytes_used = 0;
-      if (write_to_aa) {
-        ATTRIBUTE_MAP mdata = {};
-        aacollection_table _aacollection (_self, _self.value);
-        auto itr = _aacollection.find(org.value); 
-        check (itr != _aacollection.end(), "Initialize a collection for your org using initcoll action.");
-        name collection = itr->collection;
-        mdata["badge"] = string(badge.to_string());
-        mdata["contract"] = string(authorized_account.to_string());
-        mdata["img"] = ipfs;
-        mdata["name"] = details;
 
-        action {
-        permission_level{get_self(), name("active")},
-        name(ATOMIC_ASSETS_CONTRACT),
-        name("createtempl"),
-        createtemplate_args {
-          .authorized_creator = get_self(),
-          .collection_name = collection,
-          .schema_name = name(ATOMIC_ASSETS_SCHEMA_NAME),
-          .transferable = false,
-          .burnable = false,
-          .max_supply = 0,
-          .immutable_data = mdata}
-        }.send();
-        // 1 index, 1 64 bit, 4 32 bits , 2 bools, mdata
-        bytes_used = (128) + (8) + (4 * 4) + (2) + (3 * 8);
-        return bytes_used;
-      }
-      return bytes_used;
-    }
        
 
 };
